@@ -1,0 +1,28 @@
+{
+    "name": "chenshuai1993\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chenshuai1993",
+            "email": "852438363@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "~6.0",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chenshuai1993\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chenshuai1993\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
