@@ -1,6 +1,8 @@
 <h1 align="center"> weather </h1>
 
-<p align="center"> A weather SDK.</p>
+<p align="center"> 基于搞的地图开发的 php 查询天气组件.</p>
+
+[![Build Status](https://travis-ci.org/chenshuai1993/weather.svg?branch=master)](https://travis-ci.org/chenshuai1993/weather)
 
 
 ## Installing
