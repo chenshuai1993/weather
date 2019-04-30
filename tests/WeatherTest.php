@@ -1,22 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: chenshuai
- * Date: 2019/4/26
- * Time: 16:59
+
+/*
+ * This file is part of the chenshuai1993/weather.
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Chenshuai1993\Weather;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Psr7\Response;
-use Mockery\Matcher\AnyArgs;
-use Chenshuai1993\Weather\Exceptions\HttpException;
-use Chenshuai1993\Weather\Exceptions\InvalidArgumentException;
-use Chenshuai1993\Weather\Weather;
 use PHPUnit\Framework\TestCase;
-
 
 class WeatherTest extends TestCase
 {
