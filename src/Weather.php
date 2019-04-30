@@ -1,9 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: chenshuai
- * Date: 2019/4/26
- * Time: 16:33
+
+/*
+ * This file is part of the chenshuai1993/weather.
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Chenshuai1993\Weather;
@@ -12,10 +13,10 @@ use GuzzleHttp\Client;
 use Chenshuai1993\Weather\Exceptions\HttpException;
 use Chenshuai1993\Weather\Exceptions\InvalidArgumentException;
 
-
 class Weather
 {
     protected $key;
+
     protected $guzzleOptions = [];
 
     public function __construct($key)
@@ -32,7 +33,6 @@ class Weather
     {
         $this->guzzleOptions = $options;
     }
-
 
     public function getWeather($city, $type = 'live', $format = 'json')
     {
@@ -55,7 +55,7 @@ class Weather
             'key' => $this->key,
             'city' => $city,
             'output' => \strtolower($format),
-            'extensions' =>  \strtolower($type),
+            'extensions' => \strtolower($type),
         ]);
 
         try {
@@ -68,7 +68,6 @@ class Weather
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
         }
     }
-
 
     public function getLiveWeather($city, $format = 'json')
     {
