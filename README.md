@@ -3,7 +3,7 @@
 <p align="center"> 基于高德地图开发的 php 查询天气组件.</p>
 
 [![Build Status](https://travis-ci.org/chenshuai1993/weather.svg?branch=master)](https://travis-ci.org/chenshuai1993/weather)
-
+![StyleCI build status](https://github.styleci.io/repos/184015253/shield)
 
 ## Installing
 
