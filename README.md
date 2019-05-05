@@ -210,6 +210,9 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 ## 参考
 . 高德开放平台天气接口
 
+## 博客
+[陈帅博客](www.imshuai.cn)
+
 ## License
 
 MIT
