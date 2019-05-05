@@ -211,7 +211,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 . 高德开放平台天气接口
 
 ## 博客
-[陈帅博客](www.imshuai.cn)
+[陈帅博客](http://www.imshuai.cn/topics/370/chen-shuai-first-php-extension-package-weather-component)
 
 ## License
 
