@@ -13,6 +13,7 @@ $ composer require chenshuai1993/weather -vvv
 
 ## 配置
 在使用本扩展之前，你需要去 高德开放平台 注册账号，然后创建应用，获取应用的 API Key。
+> 体验d我的 API Key: df6868f749a8787c3128e2eed1e4929f
 
 ## 使用
 ```php
@@ -164,6 +165,13 @@ array | string   getForecastsWeather(string $city, string $format = 'json')
 
 ## 在 laravel 中使用
 在 Laravel 中使用也是同样的安装方式，配置写在 `config/services.php` 中：
+```$xslt
+path/config/services.php
+
+'weather' => [
+        'key' => env('WEATHER_API_KEY'),
+    ],
+```
 然后在 `.env`中配置 `WEATHER_API_KEY` ：
 ```$xslt
 WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
@@ -171,6 +179,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 可以用两种方式来获取 Chenshuai1993\Weather\Weather 实例：
 ### 方法参数注入
 ```php
+    use Chenshuai1993\Weather\Weather;
     .
     .
     .
@@ -185,6 +194,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 
 ### 服务名访问
 ```php
+    use Chenshuai1993\Weather\Weather;
     .
     .
     .
