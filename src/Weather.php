@@ -46,7 +46,7 @@ class Weather
             throw new InvalidArgumentException('Invalid response format: '.$format);
         }
 
-        if (!\array_key_exists(\strtolower($type), $types)) {
+        if (!\in_array(\strtolower($type), $types)) {
             throw new InvalidArgumentException('Invalid type value(live/forecast): '.$type);
         }
 
